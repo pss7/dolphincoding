@@ -9,7 +9,8 @@
 .btn{padding: 11px 17px; border-radius: 50px; font-size: 14px; font-weight: 600; color: #fff; background: linear-gradient(to right, #4A68FF, #A25EF7);}
 
 /* 헤더 */
-#headerWrap{position: absolute; top:0; left:0; right:0; border-bottom: 1px solid #E6E6E6; z-index: 999; background-color: #fff;}
+#headerWrap{position: absolute; top:-200px; left:0; right:0; border-bottom: 1px solid #E6E6E6; z-index: 999; background-color: #fff; transition: all 1.5s;}
+#headerWrap.active{top: 0;}
 #headerWrap .logoBox h1 a{padding: 19px 0;}
 #headerWrap .logoBox h1 a,
 #headerWrap .logoBox h1 a img{display: block;}
