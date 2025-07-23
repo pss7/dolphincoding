@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* 공통 - 가운데영역 */
+.container{max-width: 1240px; padding: 0 20px; margin: 0 auto;}
+
+.gradientText {background: linear-gradient(to right, #405FFF, #9E40FF);  -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+
+/* 공통 - 버튼 */
+.btn{padding: 11px 17px; border-radius: 50px; font-size: 14px; font-weight: 600; color: #fff; background: linear-gradient(to right, #4A68FF, #A25EF7);}
+
+/* 헤더 */
+#headerWrap{position: absolute; top:0; left:0; right:0; border-bottom: 1px solid #E6E6E6; z-index: 999; background-color: #fff;}
+#headerWrap .logoBox h1 a{padding: 19px 0;}
+#headerWrap .logoBox h1 a,
+#headerWrap .logoBox h1 a img{display: block;}
+#headerWrap .headerBox{display: flex; align-items: center; justify-content: space-between;}
+
+@media (max-width: 360px){
+
+  #headerWrap .btn{padding: 8px 11px; font-size: 11px;}
+  #headerWrap .logoBox h1 a{padding: 14px 0;}
+  #headerWrap .logoBox h1 a img{width: 150px;}
+
+}
+
+@media (max-width: 320px){
+
+  #headerWrap .logoBox h1 a img{width: 100px;}
+
+}

@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+#wrap, main{height: 100%;}
+
+/* 제목 영역 */
+#titleWrap{position: relative; height: 100%; padding-top: 151px;}
+#titleWrap .imgBox{position: relative; width: 1024px; height: 560px; margin: 0 auto;}
+#titleWrap .imgBox img{display: block;}
+#titleWrap .imgBox .img01{position: absolute; left:0; bottom: -16px; }
+#titleWrap .imgBox .img02{position: absolute; left:-39px; bottom: 159px; }
+#titleWrap .imgBox .img03{position: absolute; left:50%; bottom: 0; transform: translateX(-50%);}
+#titleWrap .imgBox .img04{position: absolute; right:-27px; bottom: -79px;}
+#titleWrap .imgBox .img05{position: absolute; left:57%; transform: translateX(-50%); bottom: 352px;}
+#titleWrap .imgBox .img06{position: absolute; right:208px; bottom: 465px;}
+#titleWrap .imgBox .img07{position: absolute; right:-35px; bottom: -27px;}
+
+/* #titleWrap .imgBox .img01{position: absolute; left:35px; bottom: -16px; }
+#titleWrap .imgBox .img02{position: absolute; left:0; bottom: 176px; }
+#titleWrap .imgBox .img03{position: absolute; left:50%; bottom: 0; transform: translateX(-50%);}
+#titleWrap .imgBox .img04{position: absolute; right:24px; bottom: -79px;}
+#titleWrap .imgBox .img05{position: absolute; left:57%; transform: translateX(-50%); bottom: 352px;}
+#titleWrap .imgBox .img06{position: absolute; right:260px; bottom: 465px;}
+#titleWrap .imgBox .img07{position: absolute; right:18px; bottom: -27px;} */
+#titleWrap{position: relative;}
+#titleWrap::after{content: ''; height: 680px; position: absolute; top:231px; left:0; right:0; background: url(../images/main/main_bg02.svg) no-repeat center; opacity: .6; z-index: -2;}
+#titleWrap::before{content: ''; height: 390px; position: absolute; left:0; right:0; bottom: 0; background: url(../images/main/main_bg03.svg) no-repeat center; z-index: -1;}
+#titleWrap .titlebox{position: relative; text-align: center; z-index: 9;}
+#titleWrap .titlebox span{margin-bottom: 15px; display: block; font-size: 32px; font-weight: 700; color: #333236;} 
+#titleWrap .titlebox h2{margin-bottom: 10px; font-size: 72px; font-weight: 800; color: #111;} 
+#titleWrap .titlebox em{display: block; font-size: 48px; font-weight: 800;} 
+
+@media (max-width: 1199px){
+
+  #titleWrap .titlebox span{font-size: 28px;}
+  #titleWrap .titlebox h2{font-size: 62px;}
+  #titleWrap .titlebox em{font-size: 40px;}
+
+  #titleWrap .imgBox{width: 874px; height: 478px;}
+  #titleWrap .imgBox .img01{width: 280px; bottom: -16px;}
+  #titleWrap .imgBox .img02{width: 140px; left:-38px; bottom: 132px;}
+  #titleWrap .imgBox .img03{width: 380px;}
+  #titleWrap .imgBox .img04{width: 290px; bottom: -60px;}
+  #titleWrap .imgBox .img05{width: 210px; left:56%; bottom: 312px;}
+  #titleWrap .imgBox .img06{right: 169px; bottom: 387px;}
+  #titleWrap .imgBox .img07{width: 130px; right:-18px; bottom: -2px;}
+
+}
+
+/* @media (max-width: 1124px){
+  
+  #titleWrap .imgBox{width: 1024px; height: 417px;}
+  #titleWrap .imgBox .img01{width: 250px; left:122px; bottom: -12px;}
+  #titleWrap .imgBox .img02{width: 120px; left:95px; bottom: 120px;}
+  #titleWrap .imgBox .img03{width: 330px;}
+  #titleWrap .imgBox .img04{width: 237px; right:130px; bottom: -46px;}
+  #titleWrap .imgBox .img05{width: 190px; bottom: 269px;}
+  #titleWrap .imgBox .img06{width: 130px; right: 260px; bottom: 335px;}
+  #titleWrap .imgBox .img07{width: 110px; bottom: -2px; right: 136px;}
+
+} */
+
+@media (max-width: 1024px){
+
+  #titleWrap .imgBox{width: 900px; height: 342px;}
+  #titleWrap .titlebox span{font-size: 22px;}
+  #titleWrap .titlebox h2{font-size: 50px;}
+  #titleWrap .titlebox em{font-size: 34px;}
+  #titleWrap .imgBox{width: 652px;}
+  #titleWrap .imgBox .img01{width: 210px; bottom: -16px;}
+  #titleWrap .imgBox .img02{width: 90px; left: -16px; bottom: 100px;}
+  #titleWrap .imgBox .img03{width: 280px;}
+  #titleWrap .imgBox .img04{width: 220px; right:-20px; bottom: -46px;}
+  #titleWrap .imgBox .img05{left: 59%; width: 160px; bottom: 222px;}
+  #titleWrap .imgBox .img06{width: 85px; right: 130px; bottom: 279px;}
+  #titleWrap .imgBox .img07{width: 95px; right: -10px; bottom: 0;}
+
+}
+
+@media (max-width: 767px){
+
+  #titleWrap{padding-top: 130px;}
+  #titleWrap .titlebox span{font-size: 20px;}
+  #titleWrap .titlebox h2{font-size: 42px;}
+  #titleWrap .titlebox em{font-size: 26px;}
+
+}
+
+@media (max-width: 690px){
+
+  #titleWrap .titlebox span{margin-bottom: 8px; font-size: 18px;}
+  #titleWrap .titlebox h2{margin-bottom: 5px; font-size: 36px;}
+  #titleWrap .titlebox em{font-size: 24px;}
+  #titleWrap .imgBox{width: 500px; height: 276px;}
+  #titleWrap .imgBox .img01{width: 170px; bottom: -16px;}
+  #titleWrap .imgBox .img02{left:0; width: 57px; bottom: 83px;}
+  #titleWrap .imgBox .img03{width: 196px;}
+  #titleWrap .imgBox .img04{width: 180px; right:-10px; bottom: -51px;}
+  #titleWrap .imgBox .img05{left: 58%; width: 120px; bottom: 153px;}
+  #titleWrap .imgBox .img06{width: 64px; right: 106px; bottom: 199px;}
+  #titleWrap .imgBox .img07{width: 69px; bottom: -7px; right: 7px;}
+
+}
+
+@media (max-width: 500px){
+
+  #titleWrap .imgBox{width: 350px; height: 270px; left: -13px;}
+  #titleWrap .imgBox .img01{width: 142px; bottom: 17px; left: 23px;}
+  #titleWrap .imgBox .img02{left:37px; width: 38px; bottom: 94px;}
+  #titleWrap .imgBox .img03{width: 190px; z-index: 9;}
+  #titleWrap .imgBox .img04{width: 155px; right:-11px; bottom: 0;}
+  #titleWrap .imgBox .img05{left:55%; width: 105px; bottom: 160px;}
+  #titleWrap .imgBox .img06{width: 38px; right: 46px; bottom: 238px;}
+  #titleWrap .imgBox .img07{width: 51px; bottom: 56px; right: 20px;}
+
+}
+
+@media (max-width: 360px){
+
+  #titleWrap{padding-top: 93px;}
+  #titleWrap .titlebox span{margin-bottom: 6px; font-size: 16px;}
+  #titleWrap .titlebox h2{margin-bottom: 4px; font-size: 34px;}
+  #titleWrap .titlebox em{font-size: 24px;}
+  
+}
+
+@media (max-width: 350px){
+
+  #titleWrap .titlebox span{margin-bottom: 0; font-size: 14px;}
+  #titleWrap .titlebox h2{margin-bottom: 0; font-size: 22px;}
+  #titleWrap .titlebox em{font-size: 16px;}
+
+  #titleWrap .imgBox{width: 280px; height: 197px; left: -8px;}
+  #titleWrap .imgBox .img01{width: 100px; bottom: 14px; left: 29px;}
+  #titleWrap .imgBox .img02{left:37px; width: 28px; bottom: 68px;}
+  #titleWrap .imgBox .img03{width: 140px; z-index: 9;}
+  #titleWrap .imgBox .img04{width: 105px; right:9px; bottom: 8px;}
+  #titleWrap .imgBox .img05{width: 70px; bottom: 122px;}
+  #titleWrap .imgBox .img06{width: 38px; right: 36px; bottom: 170px;}
+  #titleWrap .imgBox .img07{width: 40px; bottom: 40px; right: 20px;}
+
+}
+
+@media (max-width: 320px){
+
+  #titleWrap{padding-top: 78px;}
+
+}
