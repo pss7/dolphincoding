@@ -46,7 +46,7 @@ $(function () {
   function initOrDestroySlick() {
     const $slider = $("#popularWrap .slick");
 
-    if (window.innerWidth <= 1199) {
+    if (window.innerWidth <= 1024) {
       if (!slickApplied) {
         $slider.slick({
           variableWidth: true,
