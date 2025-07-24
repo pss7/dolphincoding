@@ -37,9 +37,48 @@ $(function () {
     $next.addClass('near-center');
   }
 
-  // 슬릭 초기화 후 클래스 적용
   $('#liveClassWrap .slick').on('setPosition', function () {
     updateSlideSizes();
+  });
+
+ let slickApplied = false;
+
+  function initOrDestroySlick() {
+    const $slider = $("#popularWrap .slick");
+
+    if (window.innerWidth <= 1199) {
+      if (!slickApplied) {
+        $slider.slick({
+          variableWidth: true,
+          autoplay: true,
+          arrows: false,
+          dots: false,
+          accessibility: false,
+          draggable: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          zIndex: 1000,
+          pauseOnHover: false,
+          autoplaySpeed: 5000,
+          speed: 1500,
+        });
+        slickApplied = true;
+      }
+    } else {
+      if (slickApplied) {
+        $slider.slick("unslick");
+        slickApplied = false;
+      }
+    }
+  }
+
+  // 초기 실행
+  initOrDestroySlick();
+
+  // 리사이즈 이벤트
+  $(window).on("resize", function () {
+    initOrDestroySlick();
   });
 
 });

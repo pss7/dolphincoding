@@ -781,3 +781,69 @@
   #systemWrap::after{display: none;}
 
 }
+
+/* 인기수업 영역 */
+#popularWrap{padding: 180px 0 160px; background-color: #F8F8F8; overflow: hidden;}
+#popularWrap .titleBox{margin-bottom: 74px;}
+#popularWrap .title{text-align: center; font-size: 72px; color: #111; font-weight: 700;}
+#popularWrap .popularListBox{margin-bottom: 72px; display: flex; gap: 0 24px; align-items: center; justify-content: center;}
+#popularWrap .popularListBox .box{width: 384px; border-radius: 16px; overflow: hidden; border: 1px solid #DFDFDF; box-shadow: 0 10px 20px rgba(0,0,0,5%);}
+#popularWrap .popularListBox .box .imgBox{height: 216px;}
+#popularWrap .popularListBox .box .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#popularWrap .popularListBox .box .textBox{padding: 28px 20px 38px 32px;}
+#popularWrap .popularListBox .box .textBox h3{margin-bottom: 11px; font-size: 28px; color: #333236; font-weight: 700; line-height: 1.2;}
+#popularWrap .popularListBox .box .textBox span{display: block; color: #7A7A7A; font-size: 15px; font-weight: 500;}
+#popularWrap .btnBox{display: flex; justify-content: center;}
+#popularWrap .btnBox .btn{width: 384px; height: 72px; font-size: 24px;}
+
+@media (max-width: 1199px){
+
+  #popularWrap .title{font-size: 66px;}
+  #popularWrap .popularListBox .box .textBox h3{font-size: 26px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #popularWrap{padding: 130px 0 100px;}
+  #popularWrap .popularListBox{display: block; position: relative;}
+  #popularWrap .slick-list{overflow: visible;}
+  #popularWrap .title{font-size: 46px;}
+  #popularWrap .popularListBox .box{margin-right: 15px;}
+  #popularWrap .popularListBox .box .textBox h3{font-size: 22px;}
+  #popularWrap .btnBox .btn{width: 331px; font-size: 22px;}
+
+}
+
+@media (max-width: 767px){
+
+  #popularWrap{padding: 100px 0 72px;}
+  #popularWrap .title{font-size: 34px;}
+  #popularWrap .titleBox{margin-bottom: 55px;}
+  #popularWrap .popularListBox{margin-bottom: 60px;}
+  #popularWrap .popularListBox .box .textBox{padding: 23px 20px 28px 26px;}
+  #popularWrap .popularListBox .box .imgBox{height: 180px;}
+  #popularWrap .popularListBox .box .textBox h3{font-size: 20px;}
+  #popularWrap .popularListBox .box{width: 314px;}
+  #popularWrap .btnBox .btn{width: 200px; height: 50px; font-size: 18px;}
+
+}
+
+@media (max-width: 480px){
+
+  #popularWrap .popularListBox{margin-bottom: 50px;}
+  #popularWrap .popularListBox .box{width: 280px;}
+  #popularWrap .btnBox .btn{width: 100%; font-size: 16px;}
+
+}
+
+@media (max-width: 360px){
+
+  #popularWrap{padding: 60px 0 72px;}
+  #popularWrap .titleBox{margin-bottom: 39px;}
+  #popularWrap .popularListBox{margin-bottom: 34px;}
+  #popularWrap .popularListBox .box .textBox{padding: 21px 20px 20px 22px;}
+  #popularWrap .popularListBox .box .imgBox{height: 159px;}
+  #popularWrap .popularListBox .box{width: 280px;}
+
+}
