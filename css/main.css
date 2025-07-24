@@ -366,7 +366,7 @@
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 #codingEducationWrap .codingEducationList{position: relative; height: 443px; margin-bottom: 33px;}
 #codingEducationWrap .codingEducationList::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 5px; border-radius: 10px; background-color: rgba(255, 255, 255, 0.1);}
-#codingEducationWrap .codingEducationList li{padding-left: 41px; position: relative; margin-bottom: 46px; transition: all .5s;}
+#codingEducationWrap .codingEducationList li{padding-left: 41px; position: relative; margin-bottom: 46px;}
 #codingEducationWrap .codingEducationList li.active span{color: #91A2FF;}
 #codingEducationWrap .codingEducationList li.active p{color: #fff;}
 #codingEducationWrap .codingEducationList li.active::before{content: ''; position: absolute; top:0; left:0; width: 5px; height: 100%; background-color: #fff; border-radius: 10px;}
