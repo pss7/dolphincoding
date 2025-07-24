@@ -248,9 +248,9 @@
 #liveClassWrap .liveClassSlideBox .slide.near-center {width: 380px !important; height: 380px !important;}
 
 /* 돌핀코딩 리뷰 영억 */
-#dolphincodingWrap{position: relative; padding: 150px 0 140px; background: url(../images/main/bg03.svg)no-repeat center top;}
-#dolphincodingWrap::after{width: 656px; height: 1267px; content: ''; position: absolute; top:0; right:0; background: url(../images/main/bg01.svg)no-repeat top; z-index: -1;}
-#dolphincodingWrap::before{width: 445px; height: 1243px; content: ''; position: absolute; bottom:0; left:0; background: url(../images/main/bg02.svg)no-repeat top; z-index: -1;}
+#dolphincodingWrap{position: relative; padding: 150px 0 140px;  z-index: 1; overflow: hidden;}
+#dolphincodingWrap::after{width: 656px; height: 1627px; content: ''; position: absolute; top:0; right:0; background: url(../images/main/bg01.svg)no-repeat center; background-size: contain; z-index: -1;}
+#dolphincodingWrap::before{width: 445px; height: 1243px; content: ''; position: absolute; bottom:0; left:0; background: url(../images/main/bg02.svg)no-repeat center; background-size: contain; z-index: -1;}
 #dolphincodingWrap .titleBox{margin-bottom: 50px; text-align: center;}
 #dolphincodingWrap .titleBox span{ display: block; margin: 0 auto 35px; width: 349px; height: 58px; line-height: 56px; border-radius: 8px; font-size: 32px; font-weight: 800; border: 2px solid #4E4FFC;}
 #dolphincodingWrap .titleBox h3{font-size: 72px; color: #333236; line-height: 1.2;}
@@ -311,6 +311,9 @@
   #dolphincodingWrap .reviewList li .text{margin-bottom: 13px; font-size: 15px;}
   #dolphincodingWrap .reviewList li p{font-size: 16px;}
 
+  #dolphincodingWrap::after{width: 337px; height: 842px;}
+  #dolphincodingWrap::before{width: 261px; height: 930px;}
+
 }
 
 @media (max-width: 767px){
@@ -351,5 +354,83 @@
   #dolphincodingWrap .reviewList li .infoBox .date{font-size: 11px;}
   #dolphincodingWrap .reviewList{margin-bottom: 16px; gap: 0 12px;}
   #dolphincodingWrap .marqueeContainer{gap: 12px;}
+
+}
+
+/* 코딩 교육 영역 */
+#codingEducationWrap{position: relative; padding: 174px 0 155px; background-color: #080811; z-index: 1;}
+#codingEducationWrap::after{content: ''; width: 1132px; height: 756px; position: absolute; bottom:109px; right:0; background: url(../images/main/bg04.svg) no-repeat center; background-size: contain; z-index: -1;}
+#codingEducationWrap .title{margin-bottom: 85px; font-size: 64px; font-weight: 700;}
+#codingEducationWrap .title span{  background: linear-gradient(to right, #576275, #FDFDFD);  -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#codingEducationWrap .title .gradient-text{background: linear-gradient(to right, #6E88FF, #6126B9);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#codingEducationWrap .codingEducationList{position: relative; height: 443px; margin-bottom: 33px;}
+#codingEducationWrap .codingEducationList::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 5px; border-radius: 10px; background-color: rgba(255, 255, 255, 0.1);}
+#codingEducationWrap .codingEducationList li{padding-left: 41px; position: relative; margin-bottom: 46px; transition: all .5s;}
+#codingEducationWrap .codingEducationList li.active span{color: #91A2FF;}
+#codingEducationWrap .codingEducationList li.active p{color: #fff;}
+#codingEducationWrap .codingEducationList li.active::before{content: ''; position: absolute; top:0; left:0; width: 5px; height: 100%; background-color: #fff; border-radius: 10px;}
+#codingEducationWrap .codingEducationList li:last-child{margin-bottom: 0;}
+#codingEducationWrap .codingEducationList li span{display: block; color: rgba(255, 255, 255, 0.3);  margin-bottom: 8px; font-size: 20px; font-weight: 800; }
+#codingEducationWrap .codingEducationList li p{color: rgba(255, 255, 255, 0.3); font-size: 32px; font-weight: 700;}
+#codingEducationWrap .infoText{display: block; font-weight: 500; color: #9D9DA0;}
+
+@media (max-width: 1199px){
+
+  #codingEducationWrap .title{font-size: 60px;}
+  #codingEducationWrap .codingEducationList li span{font-size: 18px;}
+  #codingEducationWrap .codingEducationList li p{font-size: 28px;}
+  #codingEducationWrap::after{width: 858px; height: 586px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #codingEducationWrap{padding: 100px 0;}
+  #codingEducationWrap .title{margin-bottom: 54px; font-size: 48px;}
+
+  #codingEducationWrap .codingEducationList{height: 372px;}
+  #codingEducationWrap .codingEducationList li span{font-size: 16px;}
+  #codingEducationWrap .codingEducationList li p{font-size: 22px;}
+  #codingEducationWrap::after{width: 758px; height: 586px;}  
+
+}
+
+@media (max-width: 767px){
+
+  #codingEducationWrap .title{margin-bottom: 46px; font-size: 40px;}
+
+  #codingEducationWrap .codingEducationList{height: 350px;}
+  #codingEducationWrap .codingEducationList li p{font-size: 20px;}
+  #codingEducationWrap::after{ width: 523px; height: 573px;}  
+
+}
+
+@media (max-width: 576px){
+
+  #codingEducationWrap{padding: 80px 0 417px;}
+  #codingEducationWrap::after{width: 100%; height: 480px; right: auto; bottom: 0;}
+
+}
+
+@media (max-width: 414px){
+
+  #codingEducationWrap{padding: 80px 0 277px;}
+  #codingEducationWrap::after{height: 306px;}
+  #codingEducationWrap .title{font-size: 36px;}
+  #codingEducationWrap .codingEducationList li p{font-size: 18px;}
+  
+}
+
+@media (max-width: 360px){
+
+  #codingEducationWrap{padding: 74px 0 277px;}
+  #codingEducationWrap .title{margin-bottom: 20px; font-size: 34px;}
+  #codingEducationWrap .codingEducationList{height: 274px;}
+  #codingEducationWrap .codingEducationList::before{width: 3px;}
+  #codingEducationWrap .codingEducationList li.active::before{width: 3px;}
+  #codingEducationWrap .codingEducationList li{margin-bottom: 29px; padding-left: 25px;}
+  #codingEducationWrap .codingEducationList li span{font-size: 12px;}
+  #codingEducationWrap .infoText{font-size: 11px;}
 
 }
