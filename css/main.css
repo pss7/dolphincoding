@@ -683,3 +683,101 @@
   #aiWrap .imgBox .img04{width: 150px; top: -26px; right: -119px;}
 
 }
+
+/* 시스템 영역 */
+#systemWrap{padding: 114px 0 75px; position: relative; z-index: 1; overflow: hidden;}
+#systemWrap::after{content: ''; width: 1573px; height: 860px; position: absolute; right:0; bottom: 0; background: url(../images/main/bg11.svg)no-repeat center; background-size: cover; z-index: -1;}
+#systemWrap .systemBox{display: flex; gap: 0 223px; justify-content: center;}
+#systemWrap .titleBox{padding-top: 63px; display: flex; flex-direction: column; align-self: flex-start; flex-shrink: 0; gap: 70px 0;}
+#systemWrap .titleBox .title{font-size: 64px; color: #333236; font-weight: 700; word-break: keep-all;}
+#systemWrap .titleBox::after{content: ''; width: 297px; height: 297px; background: url(../images/main/trophy.svg)no-repeat center; background-size: contain;}
+#systemWrap .systemList{position: relative; display: flex; gap: 40px 6%; flex-wrap: wrap;}
+#systemWrap .systemList li{position: relative; padding: 30px 20px 0 30px; width: 47%; height: 310px; background-color: #fff; border-radius: 28px;}
+#systemWrap .systemList li::after{content: ''; position: absolute; right:0; bottom: 0;}
+#systemWrap .systemList li:nth-child(1):after{width: 170px; height: 170px; right: 24px; bottom: 6px; background: url(../images/main/system01.svg)no-repeat center; background-size: contain;}
+#systemWrap .systemList li:nth-child(2):after{width: 131px; height: 130px; right: 32px; bottom: 21px; background: url(../images/main/system02.svg)no-repeat center; background-size: contain;}
+#systemWrap .systemList li:nth-child(3):after{width: 128px; height: 152px; right: 21px; bottom: 20px; background: url(../images/main/system03.svg)no-repeat center; background-size: contain;}
+#systemWrap .systemList li:nth-child(4):after{width: 141px; height: 134px; right: 24px; bottom: 9px; background: url(../images/main/system04.svg)no-repeat center; background-size: contain;}
+#systemWrap .systemList li span{display: block; margin-bottom: 12px; width: 64px; height: 28px; line-height: 30px; border-radius: 50px; text-align: center; color: #fff;}
+#systemWrap .systemList li h2{font-size: 28px; color: #333236; font-weight: 700;}
+
+@media (max-width: 1280px){
+
+  #systemWrap .systemBox{gap: 0 150px;}
+
+}
+
+@media (max-width: 1199px){
+
+  #systemWrap .systemBox{gap: 0 80px;}
+  #systemWrap .titleBox .title{font-size: 55px;}
+  #systemWrap .systemList li h2{font-size: 24px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #systemWrap .systemBox{flex-direction: column; gap: 50px 0;}
+  #systemWrap .titleBox .title{font-size: 42px;}
+  #systemWrap .titleBox::after{width: 200px; height: 200px; }
+  #systemWrap .titleBox{padding-top: 0; gap: 36px 0; width: 100%; align-items: center; text-align: center;}
+  #systemWrap .titleBox br{display: none;}
+  #systemWrap .systemList li{width: 49%; border-radius: 20px;}
+  #systemWrap .systemList{gap: 20px 2%}
+
+}
+
+@media (max-width: 767px){
+
+  #systemWrap .titleBox .title{font-size: 30px;}
+  #systemWrap .titleBox::after{width: 180px; height: 180px; }
+  #systemWrap .titleBox{gap: 17px 0}
+  #systemWrap .titleBox br{display: none;}
+  #systemWrap .systemList li{width: 49%; border-radius: 20px;}
+  #systemWrap .systemList{gap: 14px 2%}
+  #systemWrap .systemList li{padding: 24px 20px 0 30px; height: 250px;}
+  #systemWrap .systemList li h2{font-size: 22px;}
+  #systemWrap .systemList li:nth-child(1):after{width: 140px; height: 140px; right: 24px; bottom: 0;}
+  #systemWrap .systemList li:nth-child(2):after{width: 100px; height: 100px; right: 32px; bottom: 15px;}
+  #systemWrap .systemList li:nth-child(3):after{width: 98px; height: 122px; right: 21px; bottom: 10px;}
+  #systemWrap .systemList li:nth-child(4):after{width: 110px; height: 104px; right: 24px; bottom: 0;}
+  #systemWrap .systemBox{gap: 33px 0;}
+
+  #systemWrap::after{right: auto; left: 50%; transform: translateX(-50%);}
+
+}
+
+@media (max-width: 480px){
+
+  #systemWrap .titleBox .title{font-size: 28px;}
+  #systemWrap .systemList{gap: 14px 3%;}
+  #systemWrap .systemList li{padding: 24px 20px 0 22px; width: 48.5%; height: 225px;}
+  #systemWrap .systemList li span{margin-bottom: 8px; width: 57px; height: 26px; line-height: 28px; font-size: 14px;}
+  #systemWrap .systemList li h2{font-size: 16px;}
+  #systemWrap .systemList li:nth-child(1):after{width: 100px; height: 100px; right: 24px; bottom: 0;}
+  #systemWrap .systemList li:nth-child(2):after{width: 80px; height: 80px; right: 32px; bottom: 7px;}
+  #systemWrap .systemList li:nth-child(3):after{width: 88px; height: 112px; right: 21px; bottom: 5px;}
+  #systemWrap .systemList li:nth-child(4):after{width: 100px; height: 94px; right: 24px; bottom: 0;}
+
+}
+
+@media (max-width: 414px){
+
+  #systemWrap{padding: 90px 0 76px;}
+  #systemWrap .systemList li{height: 155px; padding: 15px 20px 0 15px; border-radius: 14px;}
+  #systemWrap .systemList li span{margin-bottom: 6px; width: 32px; height: 14px; line-height: 16px; font-size: 7px;}
+  #systemWrap .systemList li h2{font-size: 14px;}
+  #systemWrap .systemList li:nth-child(1):after{width: 80px; height: 80px; right: 8px; bottom: 0;}
+  #systemWrap .systemList li:nth-child(2):after{width: 65px; height: 65px; right: 8px; bottom: 7px;}
+  #systemWrap .systemList li:nth-child(3):after{width: 68px; height: 92px; right: 10px; bottom: 5px;}
+  #systemWrap .systemList li:nth-child(4):after{width: 80px; height: 74px; right: 10px; bottom: 0;}
+
+}
+
+@media (max-width: 340px){
+
+  #systemWrap{background: linear-gradient(to bottom,  #90CAFF66,#A6ABFF33,#CCA6FF66);}
+  #systemWrap .systemList li{width: 100%;}
+  #systemWrap::after{display: none;}
+
+}
