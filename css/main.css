@@ -514,7 +514,7 @@
 #whyWrap .titleBox .title{margin-bottom: 10px; background: linear-gradient(to right, #FEEAFF, #FEFEFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 64px; font-weight: 700;}
 #whyWrap .titleBox .text{font-size: 24px; font-weight: 500; color: #D0D1FD; line-height: 1.6;}
 #whyWrap .mList{display: none;}
-#whyWrap .whyList li{position: relative; margin-bottom: 20px; padding: 30px 20px 0; width: 340px; height: 310px; border-radius: 20px; background-color: #fff;}
+#whyWrap .whyList li{position: relative; margin-bottom: 20px; padding: 30px 15px 0; width: 340px; height: 310px; border-radius: 20px; background-color: #fff;}
 #whyWrap .whyList li span{display: block; width: 22px; height: 22px; line-height: 24px; margin: 0 auto 8px; background-color: #4768FF; text-align: center; border-radius: 50%; color: #fff;} 
 #whyWrap .whyList li h3{margin-bottom: 10px; text-align: center; font-size: 24px; font-weight: 700; color: #333236;}
 #whyWrap .whyList li p{text-align: center; font-size: 15px; color: rgba(66, 66, 66, 0.8); line-height: 1.6;}
@@ -587,5 +587,13 @@
   #whyWrap .whyList li p{font-size: 13px;}
   #whyWrap .whyList li h3{margin-bottom:5px;}
   #whyWrap .whyList li span{width: 20px; height: 20px; line-height: 22px; font-size: 13px;}
+
+}
+
+@media (max-width: 340px){
+
+
+  #whyWrap .whyList li{padding: 22px 15px 0;}
+  #whyWrap .whyList li.icon04::after{width: 111px; height: 85px;}
 
 }
