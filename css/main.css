@@ -434,3 +434,69 @@
   #codingEducationWrap .infoText{font-size: 11px;}
 
 }
+
+/* 선생님 영역 */
+#teacherWrap{position: relative; padding: 150px 0 165px; z-index: 1;}
+#teacherWrap::after{content: ''; width: 1542px; height: 621px; position: absolute; top:234px; right:0; background: url(../images/main/bg05.svg) no-repeat center; background-size: contain; z-index: -1;}
+#teacherWrap .titleBox{margin-bottom: 76px; text-align: center;}
+#teacherWrap .titleBox .title{color: #111; font-size: 72px; font-weight: 700;}
+#teacherWrap .teacherList li{position: relative; width: 340px; margin-bottom: 60px; padding-top: 38px;}
+#teacherWrap .teacherList li::before{content: ''; height: 1px; position: absolute; top:0; left:0; right:0; background-color: #D9D9D9;}
+#teacherWrap .teacherList li::after{content: ''; position: absolute; top:-1px; left:0; width: 70px; height: 4px; background-color: #4060F2; border-radius: 10px;}
+#teacherWrap .teacherList li span{display: block; margin-bottom: 10px; font-size: 18px; font-weight: 800; color: #A7ADC1;}
+#teacherWrap .teacherList li p{font-size: 30px; font-weight: 700; color: #111}
+#teacherWrap .teacherList li p strong{color: #445DF1;}
+#teacherWrap .layoutBox{display: flex; justify-content: space-between; gap: 0 133px;}
+#teacherWrap .teacherImgBox{ margin-top: 150px;}
+#teacherWrap .teacherImgBox img{display: block; max-width: 100%;}
+
+@media (max-width: 1199px){
+
+  #teacherWrap .layoutBox{gap: 0 50px;}
+  #teacherWrap .titleBox .title{font-size: 66px;}
+  #teacherWrap .teacherList li span{font-size: 16px;}
+  #teacherWrap .teacherList li p{font-size: 28px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #teacherWrap::after{left: 50%; transform: translateX(-56%); top:0; height: 513px;}
+  #teacherWrap .titleBox{margin-bottom: 50px;}
+  #teacherWrap .titleBox .title{font-size: 46px;}
+  #teacherWrap .teacherImgBox{margin: 0 0 30px;}
+  #teacherWrap .teacherImgBox img{margin: 0 auto;}
+  #teacherWrap .teacherList li{margin: 0; padding: 32px 0 45px; width: 100%; text-align: center;}
+  #teacherWrap .teacherList li p{font-size: 24px;}
+  #teacherWrap .layoutBox{flex-direction: column-reverse;}
+  #teacherWrap .teacherList li::after{display: none;}
+
+}
+
+@media (max-width: 767px){
+
+  #teacherWrap{padding: 90px 0 100px;}
+  #teacherWrap::after{height: 446px;}
+  #teacherWrap .titleBox .title{font-size: 42px;}
+
+}
+
+@media (max-width: 480px){
+
+  #teacherWrap{padding: 80px 0 50px;}
+  #teacherWrap::after{width: 759px;}
+  #teacherWrap .teacherList li{padding: 28px 0;}
+  #teacherWrap .titleBox .title{font-size: 38px;}
+  #teacherWrap .teacherList li p{font-size: 20px;}
+
+}
+
+@media (max-width: 360px){
+
+  #teacherWrap{padding: 70px 0 35px;}
+  #teacherWrap::after{width: 670px;}
+  #teacherWrap .teacherList li{padding: 21px 0;}
+  #teacherWrap .teacherList li span{font-size: 11px;}
+  #teacherWrap .teacherList li p{font-size: 20px;}
+
+}
