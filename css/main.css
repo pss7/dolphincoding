@@ -436,7 +436,7 @@
 }
 
 /* 선생님 영역 */
-#teacherWrap{position: relative; padding: 150px 0 165px; z-index: 1;}
+#teacherWrap{position: relative; padding: 150px 0 165px; z-index: 1; overflow: hidden;}
 #teacherWrap::after{content: ''; width: 1542px; height: 621px; position: absolute; top:234px; right:0; background: url(../images/main/bg05.svg) no-repeat center; background-size: contain; z-index: -1;}
 #teacherWrap .titleBox{margin-bottom: 76px; text-align: center;}
 #teacherWrap .titleBox .title{color: #111; font-size: 72px; font-weight: 700;}
