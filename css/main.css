@@ -782,6 +782,138 @@
 
 }
 
+/* 커리큘럼 영역 */
+#curriculumWrap{padding: 180px 0 160px;}
+#curriculumWrap .curriculumListWrap{position: relative;}
+#curriculumWrap .curriculumListWrap h3{padding: 10px 20px; position: absolute; top:-30px; border-radius: 50px; border: 1px solid #4B4B4B; color: #272727; font-size: 20px; font-weight: 700; text-align: center; background-color: #fff; z-index: 9;}
+#curriculumWrap .curriculumListWrap .title01{ left:140px; background-color: #2F2F2F; color: #fff;}
+#curriculumWrap .curriculumListWrap .title02{ left:50%; margin-left: -75px;}
+#curriculumWrap .curriculumListWrap .title03{ right:180px;}
+#curriculumWrap .titleBox{margin-bottom: 122px;}
+#curriculumWrap .title{font-size: 72px; color: #111111; text-align: center; font-weight: 700;}
+#curriculumWrap .curriculumList{width: 100%; display: flex; align-items: center;}
+#curriculumWrap .curriculumList li{position: relative; flex: 1; height: 120px; line-height: 120px; font-size: 30px; font-weight: 700; text-align: center;}
+#curriculumWrap .curriculumList li br{display: none;}
+#curriculumWrap .curriculumList li:nth-child(2){color: #333236;}
+#curriculumWrap .curriculumListBox .box{flex-shrink: 0; padding-left: 34px; width: 380px; height: 120px; line-height: 120px; }
+#curriculumWrap .curriculumListBox .box span{display: flex; align-items: center; gap: 0 26px; color: #fff; font-size: 32px; font-weight: 700;}
+#curriculumWrap .curriculumListBox .curriculumList li:nth-child(1)::after{content: ''; width: 2px; height: 76px; position: absolute; top: 50%; transform: translateY(-50%); right:0; background: url(../images/main/line.svg)no-repeat center;}
+#curriculumWrap .curriculumListBox .box span::before{width: 64px; height: 64px;}
+#curriculumWrap .curriculumListBox01 .curriculumList li:nth-child(1){color: #008DEC;}
+#curriculumWrap .curriculumListBox02 .curriculumList li:nth-child(1){color: #2440CF;}
+#curriculumWrap .curriculumListBox03 .curriculumList li:nth-child(1){color: #7C27DE;}
+#curriculumWrap .curriculumListBox01 .box{background: url(../images/main/arrow_bg01.svg)no-repeat left center; background-size: cover;}
+#curriculumWrap .curriculumListBox02 .box{background: url(../images/main/arrow_bg02.svg)no-repeat left center; background-size: cover;}
+#curriculumWrap .curriculumListBox03 .box{background: url(../images/main/arrow_bg03.svg)no-repeat left center; background-size: cover;}
+#curriculumWrap .curriculumListBox01 .box span::before{content: '';  background: url(../images/main/curriculum01.svg)no-repeat center; background-size: contain;}
+#curriculumWrap .curriculumListBox02 .box span::before{content: ''; background: url(../images/main/curriculum02.svg)no-repeat center; background-size: contain;}
+#curriculumWrap .curriculumListBox03 .box span::before{content: ''; background: url(../images/main/curriculum03.svg)no-repeat center; background-size: contain;}
+#curriculumWrap .curriculumListBox{max-width: 1200px; margin: 0 auto; margin-bottom: 30px; display: flex; border-radius: 15px; overflow: hidden; background-color: #F4F6FD;}
+
+@media (max-width: 1199px){
+
+  #curriculumWrap .title{font-size: 66px;}
+  #curriculumWrap .curriculumListWrap .title03{right: 156px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #curriculumWrap{padding: 120px 0 100px;}
+  #curriculumWrap .title{font-size: 46px;}
+  #curriculumWrap .curriculumListWrap .title03{right: 156px;}
+  #curriculumWrap .curriculumList li,
+  #curriculumWrap .curriculumListBox .box span{gap: 0 22px; font-size: 24px;}
+  #curriculumWrap .curriculumListWrap h3{top: -20px; padding: 6px 16px; font-size: 16px;}
+  #curriculumWrap .curriculumListBox,
+  #curriculumWrap .curriculumListBox .box{height: 100px; line-height: 100px;}
+  #curriculumWrap .curriculumListBox .box{width: 318px; padding-left: 26px;}
+  #curriculumWrap .curriculumListBox .box span::before{width: 50px; height: 50px;}
+
+}
+
+@media (max-width: 767px){
+
+  #curriculumWrap{padding: 110px 0 70px;}
+  #curriculumWrap .titleBox{margin-bottom: 92px;}
+  #curriculumWrap .title{font-size: 42px;}
+
+  #curriculumWrap .curriculumList li br{display: block;}
+  #curriculumWrap .curriculumList li{height: auto; line-height: 1.2;}
+  #curriculumWrap .curriculumListBox .box{width: 251px;}
+  #curriculumWrap .curriculumList li,
+  #curriculumWrap .curriculumListBox .box span{font-size: 20px;}
+  #curriculumWrap .curriculumListBox{margin-bottom: 20px;}
+  #curriculumWrap .curriculumListBox .box{background-position-x:-65px;}
+
+}
+
+@media (max-width: 576px){
+
+  #curriculumWrap .curriculumListBox .box{padding-left: 22px; width: 188px; background-position-x: -128px;}
+  #curriculumWrap .curriculumListBox .box span::before{width: 40px; height: 40px;}
+  #curriculumWrap .curriculumList li,
+  #curriculumWrap .curriculumListBox .box span{gap: 0 18px; font-size: 20px;}
+  
+}
+
+@media (max-width: 480px){
+
+  #curriculumWrap .title{font-size: 38px;}
+  #curriculumWrap .curriculumListBox{border-radius: 10px;}
+  #curriculumWrap .curriculumListBox .box span{margin-left: -14px; height: 100%; justify-content: center; flex-direction: column; gap: 5px 0;}
+  #curriculumWrap .curriculumListBox,
+  #curriculumWrap .curriculumListBox .box{padding-left: 0; height: 100px; line-height: normal;}
+  #curriculumWrap .curriculumList li,
+  #curriculumWrap .curriculumListBox .box span{gap: 10px 0; font-size: 16px;}
+  #curriculumWrap .curriculumListBox .box span::before{width: 30px; height: 30px;}
+  #curriculumWrap .curriculumListBox .box{width: 152px; background-position-x: -163px;}
+  
+}
+
+@media (max-width: 414px){
+  
+  #curriculumWrap .curriculumListBox{margin-bottom: 15px;}
+  #curriculumWrap{padding: 85px 0 66px;}
+  #curriculumWrap .titleBox{margin-bottom: 50px;}
+  #curriculumWrap .title{font-size: 32px;}
+  #curriculumWrap .curriculumListBox,
+  #curriculumWrap .curriculumListBox .box{height: 88px;}
+  #curriculumWrap .curriculumList li,
+  #curriculumWrap .curriculumListBox .box span{font-size: 14px;}
+  #curriculumWrap .curriculumListBox .box{width: 126px;}
+  #curriculumWrap .curriculumListBox .box{background-position-x: -151px;}
+  #curriculumWrap .curriculumList{margin-left: -10px;}
+  #curriculumWrap .curriculumListBox .curriculumList li:nth-child(1)::after{height: 62px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 인기수업 영역 */
 #popularWrap{padding: 180px 0 160px; background-color: #F8F8F8; overflow: hidden;}
 #popularWrap .titleBox{margin-bottom: 74px;}
