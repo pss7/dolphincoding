@@ -9,6 +9,43 @@
 /* 공통 - 버튼 */
 .btn{padding: 11px 17px; border-radius: 50px; font-size: 14px; font-weight: 600; color: #fff; background: linear-gradient(to right, #4A68FF, #A25EF7);}
 
+/* 공통 - 이벤트 */
+.eventBox{display: flex; flex-direction: column; justify-content: center; padding: 0 26px; max-width: 400px; width: 100%; height: 109px; position: fixed; left: 50%; transform: translateX(-50%); bottom: 27px; border-radius: 20px; border: 1px solid #C7C7C7; box-shadow: 0 0 20px rgba(0,0,0, 20%); background-color: #fff; z-index: 99;}
+.eventBox::before{content: ''; max-width: 310px; width: 100%; height: 53px; top: -36px; position: absolute; left: 50%; transform: translateX(-50%); background: url(../images/main/payback.svg) no-repeat center; z-index: 999; background-size: contain;}
+.eventBox .box{display: flex; gap: 0 0; align-items: center; justify-content: space-between;}
+.eventBox .textBox h1{margin-bottom: 4px; font-weight: 700; color: #424242; font-size: 16px;}
+.eventBox .textBox .price01{display: block; font-size: 13px; font-weight: 500; color: #B7B7B7;  text-decoration: line-through;}
+.eventBox .textBox .priceBox{display: flex; align-items: center; gap: 0 10px;} 
+.eventBox .textBox .priceBox .price02{font-size: 23px; color: #3A3A3A; font-weight: 800; letter-spacing: -1px;}
+.eventBox .textBox .priceBox .discount{font-weight: 700; font-size: 18px; color: #EB4646;}
+.eventBox .btn{width: 126px; height: 52px; font-size: 16px;}
+
+@media (max-width: 480px){
+
+  .eventBox .textBox h1{font-size: 14px;}
+  .eventBox .textBox .priceBox .price02{font-size: 18px;}
+  .eventBox .textBox .priceBox .discount{font-size: 15px;}
+  .eventBox{border-radius: 15px;}
+
+}
+
+@media (max-width: 414px){
+
+  .eventBox{padding: 0 20px; max-width: 414px; width: 90%; height: 92px;}
+  .eventBox .textBox .priceBox .price02{font-size: 16px;}
+  .eventBox .btn{width: 99px; height: 40px; font-size: 13px;}
+
+}
+
+@media (max-width: 320px){
+
+  .eventBox::before{top: -42px;}
+  .eventBox{padding: 20px; height: auto; text-align: center;}
+  .eventBox .box{flex-direction: column; gap: 10px 0;}
+
+}
+
+
 /* 헤더 */
 #headerWrap{position: absolute; top:-200px; left:0; right:0; border-bottom: 1px solid #E6E6E6; z-index: 999; background-color: #fff; transition: all 1.5s;}
 #headerWrap.active{top: 0;}

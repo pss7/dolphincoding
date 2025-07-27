@@ -218,6 +218,12 @@
 
 }
 
+@media (max-width: 480px){
+
+  #videoClassWrap{padding: 100px 0 55px;}
+
+}
+
 @media (max-width: 414px){
 
   #videoClassWrap .titleBox span{font-size: 16px;}
@@ -233,19 +239,86 @@
 }
 
 /* 라이브클래스 영역 */
-#liveClassWrap{display: none; padding: 130px 0 75px; }
+#liveClassWrap{padding: 130px 0 75px; overflow: hidden;}
 #liveClassWrap .titleBox{margin-bottom: 69px; text-align: center;}
 #liveClassWrap .titleBox span{display: block; font-size: 72px; font-weight: 700;}
 #liveClassWrap .titleBox h2{font-size: 72px; font-weight: 700;}
-#liveClassWrap .textBox{margin-bottom: 92px; text-align: center;}
+#liveClassWrap .textBox{margin-bottom: 127px; text-align: center;}
 #liveClassWrap .textBox span{margin-bottom: 20px; display: block; font-size: 44px; font-weight: 700; color: #333236;}
-#liveClassWrap .liveClassSlideBox .slide{margin: 0 12px; position: relative; width: 340px; height: 340px; border-radius: 20px; overflow: hidden; transition: all 1s;}
-#liveClassWrap .liveClassSlideBox .slide .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0;}
+#liveClassWrap .swiper-wrapper{align-items: center;}
+#liveClassWrap .liveClassSlideBox .slide .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0; border-radius: 20px; overflow: hidden;}
 #liveClassWrap .liveClassSlideBox .slide .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-#liveClassWrap .liveClassSlideBox .slick-track{display: flex; align-items: center; justify-content: center; margin: 0;}
-/* #liveClassWrap .liveClassSlideBox .slick-list{overflow: visible;} */
-#liveClassWrap .liveClassSlideBox .slick-center{width: 450px!important; height: 450px!important; }
-#liveClassWrap .liveClassSlideBox .slide.near-center {width: 380px !important; height: 380px !important;}
+#liveClassWrap .liveClassSlideBox .swiper-slide{width: 340px !important; height: 340px; margin: 0 12px;}
+#liveClassWrap .liveClassSlideBox .swiper-slide .slide{ width: 100%; height: 100%;}
+#liveClassWrap .liveClassSlideBox .swiper-slide-active{margin: 0 65px; transform: scale(1.32);
+  z-index: 999;  transition: all 0.5s; }
+#liveClassWrap .swiper-slide-prev{margin: 0 32px!important; transform: scale(1.12); z-index: 1;}
+#liveClassWrap .swiper-slide-next{margin: 0 32px!important; transform: scale(1.12); z-index: 1;}#liveClassWrap .textBox{height: 100%; padding: 45px 20px; position: relative;}
+#liveClassWrap .textBox h3{font-size: 41px; color: #fff; text-align: center; font-weight: 600;}
+#liveClassWrap .textBox p{font-size: 20px; color: #fff;}
+
+@media (max-width: 1199px){
+
+  #liveClassWrap .titleBox{margin-bottom: 23px;}
+  #liveClassWrap .titleBox span,
+  #liveClassWrap .titleBox h2{font-size: 66px;}
+  #liveClassWrap .textBox span{font-size: 36px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #liveClassWrap{padding: 65px 0;}
+  #liveClassWrap .titleBox{margin-bottom: 0;}
+  #liveClassWrap .titleBox span,
+  #liveClassWrap .titleBox h2{font-size: 46px;}
+  #liveClassWrap .textBox{margin-bottom: 70px;}
+  #liveClassWrap .textBox h3{font-size: 32px;}
+  #liveClassWrap .textBox p{font-size: 18px;}
+  #liveClassWrap .liveClassSlideBox .swiper-slide{width: 300px!important; height: 300px!important; margin: 0 45px!important;}
+  
+}
+
+@media (max-width: 767px){
+
+  #liveClassWrap .titleBox span,
+  #liveClassWrap .titleBox h2{font-size: 33px;}
+  #liveClassWrap .textBox span{margin-bottom: 10px; font-size: 25px;}
+  #liveClassWrap .liveClassSlideBox .swiper-slide{width: 280px!important; height: 280px!important; margin: 0 40px!important;}
+  #liveClassWrap .liveClassSlideBox .slide .imgBox{border-radius: 16px;}
+  #liveClassWrap .textBox h3{font-size: 26px;}
+  #liveClassWrap .textBox p{font-size: 16px;}
+  
+}
+
+@media (max-width: 480px){
+
+  #liveClassWrap{padding: 55px 0 40px;}
+  #liveClassWrap .liveClassSlideBox .swiper-slide{width: 240px!important; height: 240px!important; margin: 0 36px!important;}
+  #liveClassWrap .textBox h3{font-size: 24px;}
+  #liveClassWrap .textBox p{font-size: 12px;}
+  #liveClassWrap .textBox{padding: 26px 20px 20px;}
+  #liveClassWrap .liveClassSlideBox .slide .imgBox{border-radius: 12px;}
+  
+}
+
+@media (max-width: 360px){
+
+  #liveClassWrap{padding: 30px 0 0;}
+  #liveClassWrap .liveClassSlideBox .swiper-slide{width: 200px!important; height: 200px!important; margin: 0 30px!important;}
+
+}
+
+@media (max-width: 320px){
+
+  #liveClassWrap .textBox{margin-bottom: 30px;}
+  #liveClassWrap .titleBox span,
+  #liveClassWrap .titleBox h2{font-size: 22px;}
+  #liveClassWrap .textBox span{font-size: 18px;}
+  #liveClassWrap .textBox h3{font-size: 18px;}
+
+
+}
 
 /* 돌핀코딩 리뷰 영억 */
 #dolphincodingWrap{position: relative; padding: 150px 0 140px;  z-index: 1; overflow: hidden;}
@@ -318,6 +391,7 @@
 
 @media (max-width: 767px){
 
+  #dolphincodingWrap{padding: 150px 0 100px;}
   #dolphincodingWrap .textLayoutBox{margin-bottom: 40px;}
   #dolphincodingWrap .titleBox{margin-bottom:36px;}
   #dolphincodingWrap .titleBox h3{font-size: 34px;}
@@ -327,6 +401,7 @@
 
 @media (max-width: 480px){
 
+  #dolphincodingWrap{padding: 100px 0 80px;}
   #dolphincodingWrap .reviewList li{padding: 20px 20px 40px; width: 292px; height: 270px;}
   #dolphincodingWrap p.text01,
   #dolphincodingWrap p.text02,
@@ -359,7 +434,7 @@
 
 /* 코딩 교육 영역 */
 #codingEducationWrap{position: relative; padding: 174px 0 155px; background-color: #080811; z-index: 1;}
-#codingEducationWrap::after{content: ''; width: 1132px; height: 756px; position: absolute; bottom:109px; right:0; background: url(../images/main/bg04.svg) no-repeat center; background-size: contain; z-index: -1;}
+#codingEducationWrap::after{content: ''; width: 1132px; height: 756px; position: absolute; bottom:109px; right:0; background: url(../images/main/bg04.png) no-repeat center; background-size: contain; z-index: -1;}
 #codingEducationWrap .title{margin-bottom: 85px; font-size: 64px; font-weight: 700;}
 #codingEducationWrap .title span{  background: linear-gradient(to right, #576275, #FDFDFD);  -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 #codingEducationWrap .title .gradient-text{background: linear-gradient(to right, #6E88FF, #6126B9);
@@ -785,10 +860,15 @@
 /* 커리큘럼 영역 */
 #curriculumWrap{padding: 180px 0 160px;}
 #curriculumWrap .curriculumListWrap{position: relative;}
-#curriculumWrap .curriculumListWrap h3{padding: 10px 20px; position: absolute; top:-30px; border-radius: 50px; border: 1px solid #4B4B4B; color: #272727; font-size: 20px; font-weight: 700; text-align: center; background-color: #fff; z-index: 9;}
-#curriculumWrap .curriculumListWrap .title01{ left:140px; background-color: #2F2F2F; color: #fff;}
-#curriculumWrap .curriculumListWrap .title02{ left:50%; margin-left: -75px;}
-#curriculumWrap .curriculumListWrap .title03{ right:180px;}
+#curriculumWrap .curriculumListWrap .titBox{position: relative; display: flex; z-index: 9;}
+#curriculumWrap .curriculumListWrap .titBox .tit{ display: flex; align-items: center; justify-content: center;  position: relative;}
+#curriculumWrap .curriculumListWrap .titBox .tit h3{margin-bottom: -18px; width: 75px; height: 44px; line-height: 44px; border-radius: 50px; border: 1px solid #4B4B4B; color: #272727; font-size: 20px; font-weight: 700; text-align: center; background-color: #fff; z-index: 9;}
+#curriculumWrap .curriculumListWrap .titBox .tit01{width: 380px; flex-shrink: 0;}
+#curriculumWrap .curriculumListWrap .titBox .tit02,
+#curriculumWrap .curriculumListWrap .titBox .tit03{width: 410px;}
+#curriculumWrap .curriculumListWrap .titBox .tit .title01{margin-left: -10px; background-color: #2F2F2F; color: #fff;}
+#curriculumWrap .curriculumListWrap .titBox .tit .title02{width: 109px;}
+#curriculumWrap .curriculumListWrap .titBox .tit .title03{}
 #curriculumWrap .titleBox{margin-bottom: 122px;}
 #curriculumWrap .title{font-size: 72px; color: #111111; text-align: center; font-weight: 700;}
 #curriculumWrap .curriculumList{width: 100%; display: flex; align-items: center;}
@@ -815,8 +895,11 @@
 
   #curriculumWrap .title{font-size: 66px;}
   #curriculumWrap .curriculumListBox .box{width: 330px; background-position-x:-49px;}
-  #curriculumWrap .curriculumListWrap .title03{right: 156px;}
 
+  #curriculumWrap .curriculumListWrap .titBox .tit01{width: 330px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit02,
+  #curriculumWrap .curriculumListWrap .titBox .tit03{width: 415px;}
+  
 }
 
 @media (max-width: 1024px){
@@ -826,11 +909,17 @@
   #curriculumWrap .curriculumListWrap .title03{right: 156px;}
   #curriculumWrap .curriculumList li,
   #curriculumWrap .curriculumListBox .box span{gap: 0 22px; font-size: 24px;}
-  #curriculumWrap .curriculumListWrap h3{top: -20px; padding: 6px 16px; font-size: 16px;}
   #curriculumWrap .curriculumListBox,
   #curriculumWrap .curriculumListBox .box{height: 100px; line-height: 100px;}
   #curriculumWrap .curriculumListBox .box{width: 318px; padding-left: 26px; background-position-x:0;}
   #curriculumWrap .curriculumListBox .box span::before{width: 50px; height: 50px;}
+
+  #curriculumWrap .curriculumListWrap .titBox .tit h3{width: 60px; height: 35px; line-height: 35px; font-size: 15px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit .title02{width: 83px;}
+
+  #curriculumWrap .curriculumListWrap .titBox .tit01{width: 318px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit02,
+  #curriculumWrap .curriculumListWrap .titBox .tit03{width: 333px;}
 
 }
 
@@ -848,6 +937,12 @@
   #curriculumWrap .curriculumListBox{margin-bottom: 20px;}
   #curriculumWrap .curriculumListBox .box{background-position-x:-65px;}
 
+  #curriculumWrap .curriculumListWrap .titBox .tit01{width: 251px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit02,
+  #curriculumWrap .curriculumListWrap .titBox .tit03{width: 335px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit .title02{margin-left: -15px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit h3{margin-bottom: -15px;}
+  
 }
 
 @media (max-width: 576px){
@@ -856,6 +951,10 @@
   #curriculumWrap .curriculumListBox .box span::before{width: 40px; height: 40px;}
   #curriculumWrap .curriculumList li,
   #curriculumWrap .curriculumListBox .box span{gap: 0 18px; font-size: 20px;}
+
+  #curriculumWrap .curriculumListWrap .titBox .tit01{width: 188px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit02,
+  #curriculumWrap .curriculumListWrap .titBox .tit03{width: 174px;}
   
 }
 
@@ -870,7 +969,11 @@
   #curriculumWrap .curriculumListBox .box span{gap: 10px 0; font-size: 16px;}
   #curriculumWrap .curriculumListBox .box span::before{width: 30px; height: 30px;}
   #curriculumWrap .curriculumListBox .box{width: 152px; background-position-x: -163px;}
-  
+  #curriculumWrap .curriculumListWrap .titBox .tit .title01{margin-left: -25px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit01{width: 152px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit02,
+  #curriculumWrap .curriculumListWrap .titBox .tit03{width: 144px;}
+
 }
 
 @media (max-width: 414px){
@@ -888,11 +991,22 @@
   #curriculumWrap .curriculumList{margin-left: -10px;}
   #curriculumWrap .curriculumListBox .curriculumList li:nth-child(1)::after{height: 62px;}
 
+  #curriculumWrap .curriculumListWrap .titBox .tit01{width: 126px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit02,
+  #curriculumWrap .curriculumListWrap .titBox .tit03{width: 129px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit h3{margin-bottom: -10px; width: 50px; height: 30px; line-height:30px; font-size: 13px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit .title02{margin-left: -26px; width: 70px;}
+
+  
+
 }
 
 @media (max-width: 360px){
 
   #curriculumWrap .curriculumListBox .box{background-position-x: -165px; width: 112px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit01{width: 112px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit02,
+  #curriculumWrap .curriculumListWrap .titBox .tit03{width: 101px;}
 
 }
 
@@ -900,6 +1014,9 @@
 
   #curriculumWrap .curriculumListBox .box{background-position-x: -177px; width: 100px;}
   #curriculumWrap .curriculumList li, #curriculumWrap .curriculumListBox .box span{font-size: 12px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit01{width: 100px;}
+  #curriculumWrap .curriculumListWrap .titBox .tit02,
+  #curriculumWrap .curriculumListWrap .titBox .tit03{width: 94px;}
 
 }
 
@@ -1014,7 +1131,7 @@
 #applicationWrap .inputCheckBox label::before{content: ''; width: 18px; height: 18px; position: absolute; top:0; left:0; background: url(../images/main/chk01.svg)no-repeat center;}
 #applicationWrap .inputCheckBox input:checked + label::before{background: url(../images/main/chk02.svg)no-repeat center;}
 #applicationWrap .inputCheckBox .viewMore{font-size: 14px; font-weight: 600; color: #149DFF; text-decoration: underline;}
-#applicationWrap .btnBox::before{content: ''; width: 310px; height: 53px; top: -59px; position: absolute; left: 50%; transform: translateX(-50%); background: url(../images/main/payback.svg) no-repeat center; }
+/* #applicationWrap .btnBox::before{content: ''; width: 310px; height: 53px; top: -59px; position: absolute; left: 50%; transform: translateX(-50%); background: url(../images/main/payback.svg) no-repeat center; } */
 #applicationWrap .btnBox{position: relative; margin-top: 107px; display: flex; justify-content: center;}
 #applicationWrap .btnBox .btn{padding: 22px 17px; width: 100%; font-size: 24px;}
 
