@@ -581,7 +581,7 @@
 }
 
 /* WHY 영역 */
-#whyWrap{height: 100vh; background: linear-gradient( to right, #B874F9 0%, #5E4FF9 60%, #6980F8 100%); overflow: hidden;}
+#whyWrap{height: 860px; background: linear-gradient( to right, #B874F9 0%, #5E4FF9 60%, #6980F8 100%); overflow: hidden;}
 #whyWrap .container{height: 100%;}
 #whyWrap .whyBox{display: flex; align-items: center; position: relative; height: 100%; }
 #whyWrap .titleBox{flex-shrink: 0;}
