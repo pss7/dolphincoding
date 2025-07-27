@@ -1020,32 +1020,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 인기수업 영역 */
 #popularWrap{padding: 180px 0 160px; background-color: #F8F8F8; overflow: hidden;}
 #popularWrap .titleBox{margin-bottom: 74px;}
@@ -1166,5 +1140,13 @@
   #applicationWrap .inputCheckBox label::before{top: -1px;}
   #applicationWrap .inputCheckBox .viewMore{font-size: 12px;}
   #applicationWrap .btnBox{margin-top: 75px;}
+
+}
+
+@media (max-width: 320px){
+
+  #applicationWrap .formChkBox{padding: 21px 10px;}
+  #applicationWrap .inputCheckBox{gap:10px 0; flex-direction: column; align-items: flex-start;}
+  #applicationWrap .inputCheckBox .viewMore{align-self: flex-end;}
 
 }
