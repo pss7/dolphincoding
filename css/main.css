@@ -1104,7 +1104,7 @@
 #applicationWrap .inputCheckBox label{padding-left: 33px; position: relative; font-weight: 600; color: #333236; cursor: pointer;}
 #applicationWrap .inputCheckBox label::before{content: ''; width: 18px; height: 18px; position: absolute; top:0; left:0; background: url(../images/main/chk01.svg)no-repeat center;}
 #applicationWrap .inputCheckBox input:checked + label::before{background: url(../images/main/chk02.svg)no-repeat center;}
-#applicationWrap .inputCheckBox .viewMore{font-size: 14px; font-weight: 600; color: #149DFF; text-decoration: underline;}
+#applicationWrap .inputCheckBox .viewMore{flex-shrink: 0; font-size: 14px; font-weight: 600; color: #149DFF; text-decoration: underline;}
 /* #applicationWrap .btnBox::before{content: ''; width: 310px; height: 53px; top: -59px; position: absolute; left: 50%; transform: translateX(-50%); background: url(../images/main/payback.svg) no-repeat center; } */
 #applicationWrap .btnBox{position: relative; margin-top: 107px; display: flex; justify-content: center;}
 #applicationWrap .btnBox .btn{padding: 22px 17px; width: 100%; font-size: 24px;}
@@ -1131,8 +1131,10 @@
   #applicationWrap{padding: 60px 0;}
   #applicationWrap .inputRadioWrap{gap: 0 12px;}
   #applicationWrap .inputTextBox input{padding-left: 18px; height: 51px;}
-  #applicationWrap .inputTextBox input::placeholder{font-size: 15px;}
-  #applicationWrap .inputRadioWrap .inputRadioBox label{font-size: 14px;}
+  #applicationWrap .inputTextBox input::placeholder{font-size: 13px;}
+  #applicationWrap .inputRadioWrap input{margin-top: -1px;}
+  #applicationWrap .inputRadioWrap .inputRadioBox{gap: 0 6px;}
+  #applicationWrap .inputRadioWrap .inputRadioBox label{font-size: 13px;}
   #applicationWrap h2{margin-bottom: 44px; font-size: 32px;}
   #applicationWrap span{font-size: 12px;}
   #applicationWrap .btnBox .btn{font-size: 16px;}
