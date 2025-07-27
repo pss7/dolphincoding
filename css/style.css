@@ -5,19 +5,9 @@
 
 .gradient-text {background: linear-gradient(to right, #405FFF, #9E40FF);  -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .gradient-bg{background: linear-gradient(to right, #4A68FF, #A25EF7);}
-.glow-text {
-  color: #fff;
-  text-align: center;
-  background: linear-gradient(270deg, #405FFF, #9E40FF, #405FFF);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.glow-text {animation: gradientMove 4s linear infinite, glowPulse 3.5s ease-in-out infinite,   
+    textGlow 3.5s ease-in-out infinite;}
 
-  animation: 
-    gradientMove 4s linear infinite,     /* 움직이는 배경 */
-    glowPulse 4s ease-in-out infinite,   /* 퍼지는 glow */
-    textGlow 4s ease-in-out infinite;    /* 텍스트 반짝임 */
-}
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -42,13 +32,11 @@
   }
 }
 
-
 @keyframes textGlow {
   0%   { opacity: 0.9; }
   50%  { opacity: 1;   }
   100% { opacity: 0.9; }
 }
-
 
 /* 공통 - 버튼 */
 .btn{padding: 11px 17px; border-radius: 50px; font-size: 14px; font-weight: 600; color: #fff; background: linear-gradient(to right, #4A68FF, #A25EF7);}
