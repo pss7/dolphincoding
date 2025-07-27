@@ -7,49 +7,11 @@ $(function () {
     });
   });
 
-  // $("#liveClassWrap .slick").slick({
-  //   variableWidth: true,
-  //   autoplay: true,
-  //   arrows: false,
-  //   dots: false,
-  //   accessibility: false,
-  //   draggable: true,
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   zIndex: 1000,
-  //   pauseOnHover: false,
-  //   autoplaySpeed: 5000,
-  //   speed: 1500,
-  //   centerMode: true,
-  //   centerPadding: '0',
-  // });
-
-  // function updateSlideSizes() {
-  //   const $slides = $('#liveClassWrap .liveClassSlideBox .slide');
-  //   $slides.removeClass('near-center');
-
-  //   const $center = $('#liveClassWrap .liveClassSlideBox .slick-center');
-  //   const $prev = $center.prev('.slide');
-  //   const $next = $center.next('.slide');
-
-  //   $prev.addClass('near-center');
-  //   $next.addClass('near-center');
-  // }
-
-  // $('#liveClassWrap .slick').on('setPosition', function () {
-  //   updateSlideSizes();
-  // });
-
-
-
   const swiper = new Swiper('.swiper', {
     loop: true,
     centeredSlides: true,
     slidesPerView: 'auto',
   });
-
-
 
   let slickApplied = false;
 
@@ -83,10 +45,8 @@ $(function () {
     }
   }
 
-  // 초기 실행
   initOrDestroySlick();
 
-  // 리사이즈 이벤트
   $(window).on("resize", function () {
     initOrDestroySlick();
   });
