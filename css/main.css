@@ -586,7 +586,7 @@
 #whyWrap .whyBox{display: flex; align-items: center; position: relative; height: 100%; }
 #whyWrap .titleBox{flex-shrink: 0;}
 #whyWrap .titleBox span{display: block; margin-bottom: 8px; font-weight: 800; font-size: 28px; color: #91E0FF;}
-#whyWrap .titleBox .title{margin-bottom: 10px; background: linear-gradient(to right, #FEEAFF, #FEFEFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 64px; font-weight: 700;}
+#whyWrap .titleBox .title{ margin-bottom: 10px; background: linear-gradient(to right, #FEEAFF, #FEFEFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 64px; font-weight: 700;}
 #whyWrap .titleBox .text{font-size: 24px; font-weight: 500; color: #D0D1FD; line-height: 1.6;}
 #whyWrap .mList{display: none;}
 #whyWrap .whyList li{position: relative; margin-bottom: 20px; padding: 30px 15px 0; width: 340px; height: 310px; border-radius: 20px; background-color: #fff;}
