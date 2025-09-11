@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #mainWrap{margin-top: 68px;}
-
+#wrap{overflow-x: hidden;}
 
 /* 메인 제목 영역 */
 #mainTitleWrap .title{animation: effect 1.5s both;}
