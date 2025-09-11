@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* 공통 - 제목 */
+.titleBox .title{font-size: 58px; font-weight: 700; color: #191F28;}
+.titleBox .title strong{font-weight: 800;}
+
+@media (max-width:1199px){
+
+  .titleBox .title{font-size: 50px;}
+
+}
+
+@media (max-width:1024px){
+
+  .titleBox .title{font-size: 40px;}
+
+}
+
+@media (max-width:767px){
+
+  .titleBox .title{font-size: 36px;}
+
+}
+
+@media (max-width:480px){
+
+  .titleBox .title{font-size: 32px;}
+
+}
+
+@media (max-width:360px){
+
+  .titleBox .title{font-size: 30px;}
+
+}
+
+/* 공통 - 텍스트 */
+.text-left{text-align: left!important;}
+
+/* 공통 - 가운데영역 */
+.container{max-width: 1240px; padding: 0 20px; margin: 0 auto;}
+.gradient-text {background: linear-gradient(to right, #405FFF, #9E40FF);  -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.gradient-bg{background: linear-gradient(to right, #4A68FF, #A25EF7);}
+.glow-text {animation: gradientMove 4s linear infinite, glowPulse 3.5s ease-in-out infinite,   
+    textGlow 3.5s ease-in-out infinite;}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 
+      0 0 4px rgba(158, 64, 255, 0.2),
+      0 0 8px rgba(64, 95, 255, 0.2);
+  }
+  50% {
+    text-shadow: 
+      0 0 10px rgba(158, 64, 255, 0.4),
+      0 0 20px rgba(64, 95, 255, 0.4);
+  }
+  100% {
+    text-shadow: 
+      0 0 4px rgba(158, 64, 255, 0.2),
+      0 0 8px rgba(64, 95, 255, 0.2);
+  }
+}
+
+@keyframes textGlow {
+  0%   { opacity: 0.9; }
+  50%  { opacity: 1;   }
+  100% { opacity: 0.9; }
+}
+
+/* 헤더 */
+#headerWrap{position: absolute; top:-200px; left:0; right:0; border-bottom: 1px solid #F1F1F1; z-index: 999; background-color: #fff; transition: all 1.5s;}
+#headerWrap.active{top: 0;}
+#headerWrap .logoBox h1 a{padding: 19px 0;}
+#headerWrap .logoBox h1 a,
+#headerWrap .logoBox h1 a img{display: block;}
+#headerWrap .headerBox{display: flex; align-items: center; justify-content: space-between;}
+
+@media (max-width: 360px){
+
+  #headerWrap .btn{padding: 8px 11px; font-size: 11px;}
+  #headerWrap .logoBox h1 a{padding: 14px 0;}
+  #headerWrap .logoBox h1 a img{width: 150px;}
+
+}
+
+@media (max-width: 320px){
+
+  #headerWrap .logoBox h1 a img{width: 100px;}
+
+}
