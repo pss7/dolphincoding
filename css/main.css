@@ -121,6 +121,7 @@
 
 @media (max-width:1199px){
 
+  #worryWrap{padding: 150px 130px;}
   #worryWrap .list li{padding: 240px 20px 60px;}
   #worryWrap .list li .title{font-size: 26px;}
   #worryWrap .list li .text{font-size: 16px;}
@@ -140,7 +141,7 @@
 
 @media (max-width:767px){
 
-  #worryWrap{padding: 178px 0 124px;}
+  #worryWrap{padding: 130px 0;}
   #worryWrap .list li{padding: 190px 20px 60px;}
   #worryWrap .list li .title{font-size: 24px;}
   #worryWrap .list li .text{font-size: 15px;}
@@ -152,6 +153,7 @@
 
 @media (max-width:480px){
 
+  #worryWrap{padding: 100px 0 80px;}
   #worryWrap .titleBox{margin-bottom: 54px;}
 
 }
